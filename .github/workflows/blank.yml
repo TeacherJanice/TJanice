@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet Ms. Janice F.</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Ms. Janice F.'s ESL Classroom</h1>
+            <p>Let's embark on a journey of learning and growth together.</p>
+            <a href="#about" class="cta-button">Learn More</a>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>Hi, I’m Ms. Janice F. I am a passionate ESL teacher with TESOL and TEFL certification. My mission is to help you improve your English skills in a friendly and supportive environment. Let’s learn together!</p>
+    </section>
+
+    <section id="videos" class="section">
+        <h2>Introduction Videos</h2>
+        <div class="video-container">
+            <div class="video">
+                <h3>Introduction Video</h3>
+                <a href="https://drive.google.com/file/d/1yyiPvaLqVALgJMmD6lPlDoTHPFDD8jFR/view?usp=drivesdk" target="_blank">
+                    <button class="btn-primary">Watch Introduction</button>
+                </a>
+            </div>
+            <div class="video">
+                <h3>Classroom Tour</h3>
+                <a href="https://drive.google.com/file/d/18iBp2CJ-sG59pj4rTdZybVsyHf7nwtqx/view?usp=drivesdk" target="_blank">
+                    <button class="btn-primary">Watch Classroom</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <p>If you have any questions or would like to connect, feel free to reach out!</p>
+        <ul>
+            <li><strong>Phone:</strong> 09420489237 (WhatsApp)</li>
+            <li><strong>Email:</strong> <a href="mailto:janicefuertez19@gmail.com">janicefuertez19@gmail.com</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Ms. Janice F. | ESL Classroom | All Rights Reserved</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+Updated styles.css
+css
+Copy
+Edit
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    background-color: #fafafa;
+    color: #333;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Header */
+header {
+    background-color: #1a1a1a;
+    padding: 1rem 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    color: #f4a261;
+    transition: 0.3s;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #4CAF50 40%, #3e8e41);
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+    border-bottom: 5px solid #1a1a1a;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    padding: 12px 25px;
+    background-color: #f4a261;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e07b52;
+    transform: translateY(-2px);
+}
+
+/* Section Styles */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.7;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+ul li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+/* Video Section */
+.video-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.video {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.video:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.video h3 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.btn-primary {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: 0.3s;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+/* Contact Section */
+#contact a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#contact a:hover {
+    color: #2f6f2f;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
